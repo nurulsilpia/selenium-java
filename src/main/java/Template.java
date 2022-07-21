@@ -18,6 +18,9 @@ public class Template {
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 
 		driver.get("https://google.com");
+		
+		driver.close();
+		driver.quit();
 	}
 
 }
